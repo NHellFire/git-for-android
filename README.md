@@ -27,3 +27,13 @@ This will build git intended for installation in /data/local/git/
    
    
 6. Result is in `install_dir/`
+
+
+
+### Install
+
+1. Put `install_dir/data/local/git` on your device (as `/data/local/git` using whatever method you like.
+2. Download the SSL CA bundle (cacert.pem) from [here](https://curl.haxx.se/docs/caextract.html) and place in `/data/local/git`
+3. Run `git config --system http.sslcainfo /data/local/git/cacert.pem`  
+   You may first need to `mkdir /data/local/git/etc`
+
