@@ -1,0 +1,6 @@
+[submodule "curl"]
+	path = curl
+	url = https://github.com/gcesarmza/curl-android-ios.git
+[submodule "git"]
+	path = git
+	url = https://github.com/git/git.git
