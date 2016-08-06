@@ -50,7 +50,8 @@ export HOST="${GCC_ARCH}-linux-android"
 
 PATH="$TOOLCHAIN/bin:$PATH"
 
-export CFLAGS="--sysroot=${NDK_ROOT}/platforms/android-${ANDROID_API}/arch-${ARCH} -I${CURL_HEADERS} -L${CURL_LIBS} -lz"
+export CFLAGS="--sysroot=${NDK_ROOT}/platforms/android-${ANDROID_API}/arch-${ARCH} -I${CURL_HEADERS} -fpie"
+export LDFLAGS="-L${CURL_LIBS} -lz -pie"
 
 cd git
 
